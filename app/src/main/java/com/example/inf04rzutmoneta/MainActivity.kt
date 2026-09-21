@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity() {
         var random3 = 1
 
         super.onCreate(savedInstanceState)
-        var liczbaOrlow = 0
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         var moneta1Dostep = true
@@ -54,6 +53,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         binding.button2.setOnClickListener {
+            var liczbaOrlow = 0
             if(moneta1Dostep){
                 random = Random.nextInt(2)
             }
