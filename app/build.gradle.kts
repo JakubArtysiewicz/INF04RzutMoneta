@@ -3,6 +3,9 @@ plugins {
 }
 
 android {
+    buildFeatures{
+        viewBinding = true
+    }
     namespace = "com.example.inf04rzutmoneta"
     compileSdk {
         version = release(37)
